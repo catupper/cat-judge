@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.cat_judge";
+option java_outer_classname = "CatJudgeProto";
+
+package cat_judge;
+
+service Executer {
+  // Execute Code
+  rpc execute_problem (ExecutProblemRequest) returns (ExecuteProblemReply) {}
+}
+
+message ExecuteProblemRequest {
+  string problem_id = 1;
+  string language = 2;
+  string source_code = 3;
+}
+
+message ExecuteProblemReply {
+  string execution_id = 1;
+  string status = 2;
+}
