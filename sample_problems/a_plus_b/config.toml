@@ -1,0 +1,8 @@
+problem_name = "a plus b"
+author = "catupper"
+
+[problem_config]
+memory_limit = 512
+time_limit = 2000
+input = "standard input"
+output = "standard output"
