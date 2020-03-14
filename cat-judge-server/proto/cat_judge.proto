@@ -8,7 +8,7 @@ package cat_judge;
 
 service Executer {
   // Execute Code
-  rpc execute_problem (ExecutProblemRequest) returns (ExecuteProblemReply) {}
+  rpc execute_problem (ExecuteProblemRequest) returns (ExecuteProblemReply) {}
 }
 
 message ExecuteProblemRequest {
